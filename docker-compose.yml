@@ -1,0 +1,31 @@
+version: "3.3"
+services:
+  web:
+    container_name: web
+    restart: always
+    build: .
+    command: npm run dev
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - DB_DIALECT=postgres
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=postgres
+      - DB_HOSTNAME=localhost
+      - DB_URL=postgres://postgres:postgres@db:5432/postgres
+    volumes:
+      - ./app:/src/app
+    ports:
+      - "3000:3000"
+    links:
+      - db
+  db:
+    container_name: db
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+ 

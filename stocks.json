@@ -1,0 +1,27 @@
+
+    [{
+        "companyName": "Babblestorm",
+        "startPrice": 88,
+        "currentPrice": 88,
+        "changePercentage": 0
+    }, {
+        "companyName": "Zoombox",
+        "startPrice": 63,
+        "currentPrice": 63,
+        "changePercentage": 0
+    }, {
+        "companyName": "Gigabox",
+        "startPrice": 22,
+        "currentPrice": 22,
+        "changePercentage": 0
+    }, {
+        "companyName": "Eire",
+        "startPrice": 42,
+        "currentPrice": 42,
+        "changePercentage": 0
+    }, {
+        "companyName": "Skivee",
+        "startPrice": 70,
+        "currentPrice": 70,
+        "changePercentage": 0
+    }]

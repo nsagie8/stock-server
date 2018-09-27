@@ -1,0 +1,41 @@
+{
+  "name": "stock-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rimraf dist && concurrently -k 'npm:watch-ts' 'npm:serve-dev'",
+    "watch-ts": "tsc -w",
+    "serve-dev": "wait-on dist/server.js && nodemon dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "and": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.1",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "reflect-metadata": "^0.1.12",
+    "routing-controllers": "^0.7.7",
+    "sequelize": "^3.33.0",
+    "sequelize-typescript": "^0.6.7-beta.0",
+    "socket.io": "^2.1.1",
+    "time-stamp": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/morgan": "^1.7.35",
+    "concurrently": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.0.3",
+    "wait-on": "^3.0.1"
+  }
+}
